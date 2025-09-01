@@ -1,0 +1,117 @@
+SkillVedika Snowflake Training Program
+Become Job-Ready in Snowflake with Expert-Led Training
+This is an expert-led training program designed to get you job-ready in Snowflake. Through hands-on training and a real-world project, you'll gain the skills you need for a successful career in cloud data. We also provide guidance for certification and job readiness.
+
+
+Enroll Now – Limited Seats Available
+
+(On the right side of the hero section, a form should be placed with fields for Full Name, Email, and Phone Number, experience level with drop options of fresher(0-1), junior(1-3), senior(3-7), expert(7+)  
+
+Why Choose Our Program?
+
+Experienced Trainer: Learn from a professional with over 17 years of experience in the IT industry and more than four years of experience with Snowflake. Our trainer is a Snowflake SnowPro Certified professional who has delivered training for both corporate and retail batches.
+
+
+
+
+Project-Based Learning: Get end-to-end experience by completing a capstone project that simulates a real-time Snowflake implementation.
+
+
+
+
+
+Comprehensive Career Support: We provide personalized interview preparation, including mock interviews and feedback. You'll also receive guidance on resume building and career planning.
+
+
+
+
+Structured and Focused: The course is designed to make you proficient in Snowflake. You'll get step-by-step guidance to help you pass your SnowPro certification.
+
+
+
+Who Should Join?
+This training is ideal for a variety of professionals and aspiring data experts:
+
+
+Data Engineers, Data Analysts, and BI Developers who want to master cloud data platforms.
+
+
+Professionals transitioning into cloud data roles.
+
+
+Freshers with basic SQL or database knowledge who are aspiring to get a role in Snowflake.
+
+
+
+
+(Note: 
+
+Basic SQL knowledge is essential to get started, but coding knowledge like Python or Java is not required.)
+
+
+
+Key Learning Outcomes
+
+Hands-on Project Experience: Gain end-to-end experience by completing a Snowflake project. You will also get hands-on exposure to both structured and semi-structured data.
+
+
+
+
+Job Readiness: Receive guidance on resume building, mock interviews, and career paths to prepare you for the job market.
+
+
+
+Certification Readiness: Get prepared to pass the SnowPro Core Certification. We also provide guidance for the Advanced Architect and Data Engineer certifications.
+
+
+
+
+Performance Optimization: Learn key skills to optimize Snowflake.
+
+6-Weekend Training Agenda
+Our training covers all the key aspects of Snowflake over six weekends:
+
+
+Introduction to Cloud & Snowflake: Learn the basics of cloud and Snowflake's architecture.
+
+
+
+Core Setup & Data Loading: Understand core setup and object creation, with a deep dive into data loading.
+
+
+Semi-Structured Data & Time Travel: Get hands-on experience with semi-structured data and learn about Snowflake's Time Travel feature.
+
+
+Performance Optimization & Automation: Learn how to optimize performance and use Streams and Tasks for automation.
+
+
+
+Security & Capstone Project: Explore security and access control, and begin setting up your capstone project.
+
+
+Project Execution & Career Readiness: Complete your capstone project and focus on career readiness, including interview preparation.
+
+Bonus Material
+
+100+ Real Interview Questions: Practice with a collection of real questions to prepare for job interviews.
+
+
+Snowflake Certification Practice Pack: Get a practice pack to help you prepare for the certification exam.
+
+
+E-Book: Snowflake Migration Project Guide: A valuable guide for migration projects.
+
+
+
+Job Guidance: Dedicated guidance to help you find and secure a job.
+
+Support After Training
+
+Lifetime Access: You'll have access to all course materials and recordings after the training is complete.
+
+
+Dedicated Q&A Sessions: Get your questions answered through dedicated Q&A sessions.
+
+Reserve Your Seat Today – Enroll Now
+when the user fills the form the entire details sould be sent to mail rafimohammad055@gmail.com and to the user sould send the thank you mail 
+now give me modren and profitional landing page with perfect backend 
