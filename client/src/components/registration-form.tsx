@@ -16,6 +16,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
 import { VITE_BASE_URL } from "../../config"
+import Brochure from "../assets/brochure.pdf"
 
 export default function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,9 @@ export default function RegistrationForm() {
   const [showSuccess, setShowSuccess] = useState(false);
    const [isSubmitting, setIsSubmitting] = useState(false);
     const { toast } = useToast();
+    const handlebrochure=()=>{
+      window.open(Brochure, '_blank')
+    }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -70,14 +74,12 @@ export default function RegistrationForm() {
           <p className="text-green-300 font-medium">
             🎉 Thank you for Booking! We’ll contact you soon.
           </p>
-          <a
-  href="./src/logos/brochure.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
+          <button
+onClick={handlebrochure}
   className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
 >
   📄 View Our Brochure
-</a>
+</button>
 
         </div>
       ) : (

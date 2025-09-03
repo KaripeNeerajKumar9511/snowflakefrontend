@@ -19,3 +19,8 @@ declare module "*.jpeg" {
 }
 
 
+declare module "*.pdf" {
+  const content: string;
+  export default content;
+}
+
