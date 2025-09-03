@@ -69,8 +69,7 @@ export default function Home() {
                   <div>
                     <h5 className="font-semibold text-foreground mb-2">Prerequisites</h5>
                     <p className="text-muted-foreground">
-                      Basic SQL knowledge is essential to get started, but coding knowledge like Python or Java is not required.
-                    </p>
+                    Basic SQL knowledge is good to start.</p>
                   </div>
                 </div>
               </div>

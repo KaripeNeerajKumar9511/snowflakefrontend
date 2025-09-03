@@ -71,7 +71,7 @@ export default function RegistrationForm() {
             🎉 Thank you for Booking! We’ll contact you soon.
           </p>
           <a
-  href="/brochure.pdf"
+  href="./src/logos/brochure.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
