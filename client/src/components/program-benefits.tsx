@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { UserCheck, ChartScatter, HandHeart, Target } from "lucide-react";
+import { UserCheck, ChartScatter, HandHeart, Users } from "lucide-react"; 
+// 👆 Changed Target → Users (you can pick any from lucide-react)
 
 export default function ProgramBenefits() {
   const benefits = [
@@ -8,28 +9,32 @@ export default function ProgramBenefits() {
       title: "Experienced Trainer",
       description: "Learn from a professional with over 17 years of experience in the IT industry and more than four years of experience with Snowflake. Our trainer is a Snowflake SnowPro Certified professional who has delivered training for both corporate and retail batches.",
       bgColor: "bg-primary/10",
-      iconColor: "text-primary"
+      iconColor: "text-primary",
+      customHeading: false
     },
     {
       icon: ChartScatter,
       title: "Project-Based Learning",
       description: "Get end-to-end experience by completing a capstone project that simulates a real-time Snowflake implementation. Work with both structured and semi-structured data in real-world scenarios.",
       bgColor: "bg-accent/10",
-      iconColor: "text-accent"
+      iconColor: "text-accent",
+      customHeading: false
     },
     {
       icon: HandHeart,
       title: "Comprehensive Career Support",
       description: "We provide personalized interview preparation, including mock interviews and feedback. You'll also receive guidance on resume building and career planning to ensure job readiness.",
       bgColor: "bg-primary/10",
-      iconColor: "text-primary"
+      iconColor: "text-primary",
+      customHeading: false
     },
     {
-      icon: Target,
-      title: "Structured and Focused",
-      description: "The course is designed to make you proficient in Snowflake. You'll get step-by-step guidance to help you pass your SnowPro certification and become industry-ready.",
+      icon: Users, // 👈 updated icon
+      title: "1-to-1 Membership Support",
+      description: "Get personalized career guidance with exclusive 1-to-1 sessions with our expert trainer. We'll support you at every step of your Snowflake career journey, from resume building and mock interviews to certification prep and job search strategies.",
       bgColor: "bg-accent/10",
-      iconColor: "text-accent"
+      iconColor: "text-accent",
+      customHeading: true // 👈 mark this as special
     }
   ];
 
@@ -50,7 +55,11 @@ export default function ProgramBenefits() {
                     <benefit.icon className={`w-6 h-6 ${benefit.iconColor}`} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-card-foreground mb-3">{benefit.title}</h3>
+                    {benefit.customHeading ? (
+                      <h3 className="text-lg font-semibold text-foreground mb-3">{benefit.title}</h3>
+                    ) : (
+                      <h3 className="text-xl font-semibold text-card-foreground mb-3">{benefit.title}</h3>
+                    )}
                     <p className="text-muted-foreground leading-relaxed">
                       {benefit.description}
                     </p>

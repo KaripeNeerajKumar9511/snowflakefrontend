@@ -1,0 +1,877 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillVedika Snowflake Training Program - Become Job-Ready</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "ui-sans-serif", "system-ui"],
+                }
+            },
+        }
+    };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --background: hsl(210 40% 98%);
+            --foreground: hsl(222.2 84% 4.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222.2 84% 4.9%);
+            --primary: hsl(214 84% 56%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(222.2 47.4% 11.2%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215.4 16.3% 46.9%);
+            --accent: hsl(158 64% 52%);
+            --accent-foreground: hsl(210 40% 98%);
+            --destructive: hsl(0 84.2% 60.2%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(214.3 31.8% 91.4%);
+            --input: hsl(214.3 31.8% 91.4%);
+            --ring: hsl(214 84% 56%);
+            --radius: 0.5rem;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(214 74% 46%) 100%);
+        }
+        
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .form-success {
+            background: hsl(158 64% 95%);
+            border: 1px solid hsl(158 64% 52%);
+            color: hsl(158 64% 22%);
+        }
+        
+        .form-error {
+            background: hsl(0 84% 95%);
+            border: 1px solid hsl(0 84% 60%);
+            color: hsl(0 84% 30%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-background text-foreground scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-primary">
+                        <i class="fas fa-graduation-cap mr-2"></i>
+                        SkillVedika
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#program" class="text-muted-foreground hover:text-primary transition-colors">Program</a>
+                    <a href="#curriculum" class="text-muted-foreground hover:text-primary transition-colors">Curriculum</a>
+                    <a href="#benefits" class="text-muted-foreground hover:text-primary transition-colors">Benefits</a>
+                    <a href="#enroll" class="text-muted-foreground hover:text-primary transition-colors">Enroll</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-muted-foreground hover:text-primary">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg hero-pattern pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Become Job-Ready in <span class="text-accent">Snowflake</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
+                        Expert-led training program designed to get you job-ready in Snowflake through hands-on training and real-world projects.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span class="text-blue-100">17+ Years Expert Trainer</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span class="text-blue-100">SnowPro Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span class="text-blue-100">Project-Based Learning</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                        <div class="text-center">
+                            <div class="text-accent text-lg font-semibold mb-2">Limited Seats Available</div>
+                            <div class="text-3xl font-bold mb-2">6-Weekend Program</div>
+                            <div class="text-blue-100">Next batch starts soon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <!-- @COMPONENT: RegistrationForm -->
+                <div class="bg-white rounded-2xl shadow-2xl p-8 border border-border">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-foreground mb-2">Enroll Now</h3>
+                        <p class="text-muted-foreground">Start your Snowflake journey today</p>
+                    </div>
+                    
+                    <form id="registrationForm" class="space-y-6">
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-foreground mb-2">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                required 
+                                class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                                placeholder="Enter your full name"
+                            >
+                            <div class="error-message hidden text-destructive text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                                placeholder="Enter your email address"
+                            >
+                            <div class="error-message hidden text-destructive text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                required 
+                                class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                                placeholder="Enter your phone number"
+                            >
+                            <div class="error-message hidden text-destructive text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="experience" class="block text-sm font-medium text-foreground mb-2">Experience Level *</label>
+                            <select 
+                                id="experience" 
+                                name="experience" 
+                                required 
+                                class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-all"
+                            >
+                                <option value="">Select your experience level</option>
+                                <option value="fresher">Fresher (0-1 years)</option>
+                                <option value="junior">Junior (1-3 years)</option>
+                                <option value="senior">Senior (3-7 years)</option>
+                                <option value="expert">Expert (7+ years)</option>
+                            </select>
+                            <div class="error-message hidden text-destructive text-sm mt-1"></div>
+                        </div>
+                        
+                        <button 
+                            type="submit" 
+                            class="w-full bg-primary text-primary-foreground py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-all transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                            id="submitBtn"
+                        >
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Reserve Your Seat
+                        </button>
+                    </form>
+                    
+                    <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
+                    
+                    <div class="mt-6 text-center text-sm text-muted-foreground">
+                        <i class="fas fa-shield-alt mr-1"></i>
+                        Your information is secure and confidential
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: RegistrationForm -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Program -->
+    <section id="program" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Our Program?</h2>
+                <p class="text-xl text-muted-foreground">Four compelling reasons to start your Snowflake journey with us</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary/10 p-3 rounded-lg">
+                            <i class="fas fa-user-tie text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Experienced Trainer</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Learn from a professional with over 17 years of experience in the IT industry and more than four years of experience with Snowflake. Our trainer is a Snowflake SnowPro Certified professional who has delivered training for both corporate and retail batches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent/10 p-3 rounded-lg">
+                            <i class="fas fa-project-diagram text-accent text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Project-Based Learning</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Get end-to-end experience by completing a capstone project that simulates a real-time Snowflake implementation. Work with both structured and semi-structured data in real-world scenarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary/10 p-3 rounded-lg">
+                            <i class="fas fa-handshake text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Comprehensive Career Support</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                We provide personalized interview preparation, including mock interviews and feedback. You'll also receive guidance on resume building and career planning to ensure job readiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent/10 p-3 rounded-lg">
+                            <i class="fas fa-bullseye text-accent text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Structured and Focused</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                The course is designed to make you proficient in Snowflake. You'll get step-by-step guidance to help you pass your SnowPro certification and become industry-ready.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Join -->
+    <section class="py-20 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Who Should Join?</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        This training is ideal for a variety of professionals and aspiring data experts
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary p-2 rounded-full mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Data Professionals</h4>
+                                <p class="text-muted-foreground">Data Engineers, Data Analysts, and BI Developers who want to master cloud data platforms.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary p-2 rounded-full mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Career Transitioners</h4>
+                                <p class="text-muted-foreground">Professionals transitioning into cloud data roles and looking to upskill.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary p-2 rounded-full mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Fresh Graduates</h4>
+                                <p class="text-muted-foreground">Freshers with basic SQL or database knowledge who are aspiring to get a role in Snowflake.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-accent/10 rounded-lg border-l-4 border-accent">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-info-circle text-accent mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold text-foreground mb-2">Prerequisites</h5>
+                                <p class="text-muted-foreground">
+                                    Basic SQL knowledge is essential to get started, but coding knowledge like Python or Java is not required.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Professional team working on data analytics -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Professional team collaborating on data projects" class="rounded-2xl shadow-lg w-full h-auto" />
+                    <div class="absolute inset-0 bg-primary/20 rounded-2xl"></div>
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-foreground">500+</div>
+                            <div class="text-muted-foreground">Professionals Trained</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Learning Outcomes -->
+    <section id="benefits" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Key Learning Outcomes</h2>
+                <p class="text-xl text-muted-foreground">What you'll achieve by the end of this program</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tasks text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-foreground mb-3">Hands-on Project Experience</h3>
+                    <p class="text-muted-foreground">
+                        Gain end-to-end experience by completing a Snowflake project with both structured and semi-structured data.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-briefcase text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-foreground mb-3">Job Readiness</h3>
+                    <p class="text-muted-foreground">
+                        Receive guidance on resume building, mock interviews, and career paths to prepare for the job market.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-foreground mb-3">Certification Readiness</h3>
+                    <p class="text-muted-foreground">
+                        Get prepared to pass the SnowPro Core Certification and guidance for Advanced certifications.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tachometer-alt text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-foreground mb-3">Performance Optimization</h3>
+                    <p class="text-muted-foreground">
+                        Learn key skills to optimize Snowflake performance and implement best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Curriculum -->
+    <section id="curriculum" class="py-20 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">6-Weekend Training Agenda</h2>
+                <p class="text-xl text-muted-foreground">Comprehensive curriculum covering all key aspects of Snowflake</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- Weekend 1 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Introduction to Cloud & Snowflake</h3>
+                                <p class="text-muted-foreground">Learn the basics of cloud computing and Snowflake's unique architecture and capabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weekend 2 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Core Setup & Data Loading</h3>
+                                <p class="text-muted-foreground">Understand core setup and object creation, with a deep dive into data loading techniques and best practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weekend 3 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Semi-Structured Data & Time Travel</h3>
+                                <p class="text-muted-foreground">Get hands-on experience with semi-structured data and learn about Snowflake's powerful Time Travel feature.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weekend 4 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Performance Optimization & Automation</h3>
+                                <p class="text-muted-foreground">Learn how to optimize performance and use Streams and Tasks for automation in Snowflake.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weekend 5 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Security & Capstone Project</h3>
+                                <p class="text-muted-foreground">Explore security and access control features, and begin setting up your capstone project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weekend 6 -->
+                    <div class="bg-card rounded-xl p-6 border border-border shadow-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent text-accent-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-card-foreground mb-2">Project Execution & Career Readiness</h3>
+                                <p class="text-muted-foreground">Complete your capstone project and focus on career readiness, including interview preparation and job guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Materials -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Bonus Materials</h2>
+                <p class="text-xl text-muted-foreground">Additional resources to accelerate your success</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-card rounded-xl p-6 border border-border shadow-sm text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-question-circle text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-card-foreground mb-3">100+ Real Interview Questions</h3>
+                    <p class="text-muted-foreground">Practice with a collection of real questions to prepare for job interviews.</p>
+                </div>
+                
+                <div class="bg-card rounded-xl p-6 border border-border shadow-sm text-center">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-card-foreground mb-3">Certification Practice Pack</h3>
+                    <p class="text-muted-foreground">Get a comprehensive practice pack to help you prepare for the certification exam.</p>
+                </div>
+                
+                <div class="bg-card rounded-xl p-6 border border-border shadow-sm text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-card-foreground mb-3">Migration Project Guide</h3>
+                    <p class="text-muted-foreground">A valuable e-book guide for understanding and executing migration projects.</p>
+                </div>
+                
+                <div class="bg-card rounded-xl p-6 border border-border shadow-sm text-center">
+                    <div class="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-compass text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-card-foreground mb-3">Job Guidance</h3>
+                    <p class="text-muted-foreground">Dedicated guidance to help you find and secure your dream job in Snowflake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support After Training -->
+    <section class="py-20 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Support After Training</h2>
+                <p class="text-xl text-muted-foreground">We're with you even after the training ends</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary/10 p-3 rounded-lg">
+                            <i class="fas fa-infinity text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Lifetime Access</h3>
+                            <p class="text-muted-foreground">
+                                You'll have access to all course materials and recordings after the training is complete. Learn at your own pace forever.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-xl p-8 border border-border shadow-sm">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent/10 p-3 rounded-lg">
+                            <i class="fas fa-comments text-accent text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-card-foreground mb-3">Dedicated Q&A Sessions</h3>
+                            <p class="text-muted-foreground">
+                                Get your questions answered through dedicated Q&A sessions. Our expert trainer is always available to help.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="enroll" class="py-20 gradient-bg hero-pattern">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Reserve Your Seat Today</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Don't miss this opportunity to transform your career with expert Snowflake training
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <div class="text-3xl font-bold text-accent mb-2">6</div>
+                    <div class="text-blue-100">Weekend Sessions</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-accent mb-2">17+</div>
+                    <div class="text-blue-100">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-blue-100">Job Support</div>
+                </div>
+            </div>
+            
+            <a href="#" onclick="scrollToForm()" class="inline-flex items-center bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-all transform hover:scale-105">
+                <i class="fas fa-rocket mr-3"></i>
+                Enroll Now - Limited Seats
+            </a>
+            
+            <div class="mt-8 text-blue-100">
+                <i class="fas fa-clock mr-2"></i>
+                Next batch starts soon - Don't wait!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-background py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <i class="fas fa-graduation-cap mr-2"></i>
+                        SkillVedika
+                    </div>
+                    <p class="text-background/80">
+                        Empowering professionals with expert-led training programs in cutting-edge technologies.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-background/80">
+                        <li><a href="#program" class="hover:text-background transition-colors">Program Details</a></li>
+                        <li><a href="#curriculum" class="hover:text-background transition-colors">Curriculum</a></li>
+                        <li><a href="#benefits" class="hover:text-background transition-colors">Benefits</a></li>
+                        <li><a href="#enroll" class="hover:text-background transition-colors">Enroll Now</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <div class="space-y-2 text-background/80">
+                        <div>
+                            <i class="fas fa-envelope mr-2"></i>
+                            rafimohammad055@gmail.com
+                        </div>
+                        <div>
+                            <i class="fas fa-phone mr-2"></i>
+                            Contact for more details
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-background/20 mt-8 pt-8 text-center text-background/80">
+                <p>&copy; 2024 SkillVedika. All rights reserved. | Snowflake Training Program</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            // Form validation and submission
+            const form = document.getElementById('registrationForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+
+            // Validation functions
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            function validatePhone(phone) {
+                const re = /^[\+]?[1-9][\d]{0,15}$/;
+                return re.test(phone.replace(/[\s\-\(\)]/g, ''));
+            }
+
+            function showError(fieldId, message) {
+                const field = document.getElementById(fieldId);
+                const errorElement = field.parentElement.querySelector('.error-message');
+                field.classList.add('border-destructive');
+                errorElement.textContent = message;
+                errorElement.classList.remove('hidden');
+            }
+
+            function hideError(fieldId) {
+                const field = document.getElementById(fieldId);
+                const errorElement = field.parentElement.querySelector('.error-message');
+                field.classList.remove('border-destructive');
+                errorElement.classList.add('hidden');
+            }
+
+            function validateForm() {
+                let isValid = true;
+                
+                // Clear previous errors
+                ['fullName', 'email', 'phone', 'experience'].forEach(hideError);
+
+                // Validate full name
+                const fullName = document.getElementById('fullName').value.trim();
+                if (!fullName) {
+                    showError('fullName', 'Full name is required');
+                    isValid = false;
+                } else if (fullName.length < 2) {
+                    showError('fullName', 'Full name must be at least 2 characters');
+                    isValid = false;
+                }
+
+                // Validate email
+                const email = document.getElementById('email').value.trim();
+                if (!email) {
+                    showError('email', 'Email is required');
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    showError('email', 'Please enter a valid email address');
+                    isValid = false;
+                }
+
+                // Validate phone
+                const phone = document.getElementById('phone').value.trim();
+                if (!phone) {
+                    showError('phone', 'Phone number is required');
+                    isValid = false;
+                } else if (!validatePhone(phone)) {
+                    showError('phone', 'Please enter a valid phone number');
+                    isValid = false;
+                }
+
+                // Validate experience
+                const experience = document.getElementById('experience').value;
+                if (!experience) {
+                    showError('experience', 'Please select your experience level');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            function showMessage(message, type) {
+                formMessage.textContent = message;
+                formMessage.className = `mt-4 p-4 rounded-lg ${type === 'success' ? 'form-success' : 'form-error'}`;
+                formMessage.classList.remove('hidden');
+            }
+
+            // Form submission handler
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (!validateForm()) {
+                    return;
+                }
+
+                // Disable submit button and show loading
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Submitting...';
+
+                // Simulate form submission
+                setTimeout(function() {
+                    // In a real implementation, this would send data to a backend
+                    // TODO: Implement actual email sending via backend API
+                    console.log('Form data to be sent:', {
+                        fullName: document.getElementById('fullName').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        experience: document.getElementById('experience').value,
+                        timestamp: new Date().toISOString()
+                    });
+
+                    // Show success message
+                    showMessage('Thank you! Your enrollment request has been submitted successfully. You will receive a confirmation email shortly.', 'success');
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Re-enable submit button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i>Reserve Your Seat';
+
+                    // In a real implementation, you would:
+                    // 1. Send form data to rafimohammad055@gmail.com
+                    // 2. Send confirmation email to the user
+                    // 3. Handle any errors appropriately
+                    
+                }, 2000);
+            });
+
+            // Real-time validation
+            document.getElementById('fullName').addEventListener('blur', function() {
+                const value = this.value.trim();
+                if (value && value.length >= 2) {
+                    hideError('fullName');
+                }
+            });
+
+            document.getElementById('email').addEventListener('blur', function() {
+                const value = this.value.trim();
+                if (value && validateEmail(value)) {
+                    hideError('email');
+                }
+            });
+
+            document.getElementById('phone').addEventListener('blur', function() {
+                const value = this.value.trim();
+                if (value && validatePhone(value)) {
+                    hideError('phone');
+                }
+            });
+
+            document.getElementById('experience').addEventListener('change', function() {
+                if (this.value) {
+                    hideError('experience');
+                }
+            });
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll to form function
+            window.scrollToForm = function() {
+                document.getElementById('registrationForm').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            };
+
+            // Mobile menu toggle (basic implementation)
+            const mobileMenuBtn = document.querySelector('.md\\:hidden button');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

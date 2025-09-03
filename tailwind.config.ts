@@ -19,6 +19,7 @@ export default {
         },
         popover: {
           DEFAULT: "var(--popover)",
+          
           foreground: "var(--popover-foreground)",
         },
         primary: {
