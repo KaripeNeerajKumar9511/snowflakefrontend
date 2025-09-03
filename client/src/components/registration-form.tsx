@@ -42,7 +42,7 @@ export default function RegistrationForm() {
     setSubmitted(true)
    
     // Simulate API call
-     const response = await axios.post(`${VITE_BASE_URL}/send-email`, formData);
+     const response = await axios.post(`${VITE_BASE_URL}/send-email/`, formData);
       console.log("Registration data:", formData);
        console.log("Registration data:", response.data);
         setIsSubmitting(false);
