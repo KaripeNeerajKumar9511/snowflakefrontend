@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -18,7 +19,9 @@ import axios from "axios";
 import { VITE_BASE_URL } from "../../config"
 import Brochure from "../assets/brochure.pdf"
 
+
 export default function RegistrationForm() {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,6 +65,18 @@ export default function RegistrationForm() {
     console.log("Form Submitted:", formData);
     setSubmitted(true);
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.innerHTML = `
+      gtag('event', 'conversion', {'send_to': 'AW-17526353187/0vHHCLPV_JMbEKPam6VB'});
+    `;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="max-w-lg  mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border pb-16 mt-8 border-white/20">
