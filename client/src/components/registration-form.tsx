@@ -66,18 +66,11 @@ export default function RegistrationForm() {
     setSubmitted(true);
   };
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.innerHTML = `
-      gtag('event', 'conversion', {'send_to': 'AW-17526353187/0vHHCLPV_JMbEKPam6VB'});
-    `;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
+  if (typeof window.gtag !== "undefined") {
+  window.gtag("event", "conversion", {
+    send_to: "AW-17526353187/0vHHCLPV_JMbEKPam6VB",
+  });
+}
   return (
     <div className="max-w-lg  mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border pb-16 mt-8 border-white/20">
       <h2 className="text-2xl font-bold text-center mb-6 text-white">
